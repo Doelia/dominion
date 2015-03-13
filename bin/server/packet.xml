@@ -1,0 +1,47 @@
+<game id="10">
+	<me id="1">
+		<main>
+			<card value="1" />
+			<card value="4" />
+			<card value="4" />
+			<card value="4" />
+			<card value="1" />
+		</main>
+		<nachat value="1" />
+		<naction value="1" />
+		<nmoney value="5" />
+		<inplay>
+		</inplay>
+		<defausse n="5" last="1" />
+		<deck n="0" />
+		<kingdom>
+			<card value="20" n="10" />
+			<card value="16" n="10" />
+			<card value="30" n="10" />
+			<card value="11" n="10" />
+			<card value="10" n="10" />
+			<card value="19" n="10" />
+			<card value="21" n="10" />
+			<card value="26" n="10" />
+			<card value="14" n="10" />
+			<card value="27" n="10" />
+		</kingdom>
+		<other>
+			<card value="1" n="10" />
+			<card value="2" n="10" />
+			<card value="3" n="10" />
+			<card value="4" n="10" />
+			<card value="5" n="10" />
+			<card value="6" n="10" />
+			<card value="7" n="10" />
+		</other>
+	</me>
+	<joueurs>
+			<joueur id="0" name="d">
+		<main n="5" />
+		<deck n="0" />
+		<defausse n="5" last="4" />
+	</joueur>
+	</joueurs>
+		<nactif value="0" />
+	</game>

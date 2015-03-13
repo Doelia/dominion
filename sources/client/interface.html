@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="iso-8859-15">
+    <title>Dominia 2.0</title>
+    <link href="design/style.css" media="screen" rel="stylesheet" type="text/css">
+     <link href="design/game.css" media="screen" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/refresh.js"></script>
+    <script type="text/javascript" src="js/socket.js"></script>
+    <script type="text/javascript" src="js/uses.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/games.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/choix.js"></script>
+</head>
+
+<body>
+    <div id="panel">
+
+        <div id="connect">
+            <p>
+                <input id="pseudo" />
+                <input type="submit" value="" onclick="connexion(el('pseudo').value)" class="entrer" />
+            </p>
+         </div>
+
+        <div id="join">
+            <div class="liste"></div>
+            <input type="submit" value="" onclick="send('Z')" class="bouton refresh"/>
+            <input id="nbrJoueurs" value="4" />
+            <input type="submit" value="" onclick="send('N-'+el('nbrJoueurs').value)" class="bouton creer" />
+        </div>
+
+        <div id="game">
+            <img id="volante" />
+            <img id="HD" onclick="virerHD()"/>
+
+            <div id="choix" style="display: none;">
+                <div class="menu">Il faut faire un choix</div>
+                <div id="choix_content">Blabla</div>
+            </div>
+
+            <div id="menu">
+                Partie de Dominia. En cours de jeu.
+            </div>
+
+            <div id="basesCards">
+                <div id="basesCards_monay" class="boite">
+                    <div class="case" id="base1" onclick="buyCard(1)">
+                        <div class="qte"></div>
+                        <img src="cards/1.jpg" />
+                    </div>
+                    <div class="case" id="base2" onclick="buyCard(2)">
+                        <div class="qte"></div>
+                        <img src="cards/2.jpg" />
+                    </div>
+                    <div class="case" id="base3" onclick="buyCard(3)">
+                        <div class="qte"></div>
+                        <img src="cards/3.jpg" />
+                   </div>
+                </div>
+                <div id="basesCards_victoires" class="boite">
+                    <div class="case" id="base4" onclick="buyCard(4)">
+                        <div class="qte"></div>
+                        <img src="cards/4.jpg" />
+                   </div>
+                    <div class="case" id="base5" onclick="buyCard(5)">
+                        <div class="qte"></div>
+                        <img src="cards/5.jpg" />
+                   </div>
+                    <div class="case" id="base6" onclick="buyCard(6)">
+                        <div class="qte"></div>
+                        <img src="cards/6.jpg" />
+                   </div>
+                </div>
+                <div id="basesCards_curses" class="boite">
+                    <div class="case" id="base7" onclick="buyCard(7)">
+                        <div class="qte"></div>
+                        <img src="cards/7.jpg" />
+                    </div>
+                </div>
+            </div>
+            
+            <div id="kingdomCards">
+            </div>
+
+            <div id="main">
+            </div>
+
+            <div id="inplay"></div>
+
+            <div id="deck">
+            </div>
+
+            <div id="defausse">
+            </div>
+
+            <div id="players">
+                <div class="player" id="player1"></div>
+                <div class="player" id="player2"></div>
+                <div class="player" id="player3"></div>
+            </div>
+            <div id="logs">
+                <textarea id="logs_html"></textarea>
+            </div>
+
+            <div id="etat">
+                <div id="buys" class="valeur"><value></value></div>
+                <div id="actions" class="valeur"><value></value></div>
+                <div id="money" class="valeur"><value></value></div>
+                <div id="passTurn" onclick="endTurn()" />
+            </div>
+
+            <div id="cardHD">
+                <img src="cards/14.jpg" />
+            </div>
+        </div>
+        
+         
+    </div>
+</body>
+
+</html>
+

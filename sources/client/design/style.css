@@ -1,0 +1,147 @@
+
+body {
+	background-color: rgb(20,20,20);
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+}
+
+#panel {
+	width: 1000px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	border-radius: 10px;
+	position: relative;
+}
+
+#join {
+	width: 1000px;
+	height: 600px;
+	background-image: url('parties.jpg');
+	position: absolute;
+}
+
+#join .bouton {
+	position: absolute;
+	height: 30px;
+	width: 167px;
+	background: transparent;
+	border: 0px;
+	cursor: pointer;
+}
+
+#join .creer {
+	top: 310px;
+	left: 719px;
+}
+
+#join #nbrJoueurs {
+	position: absolute;
+	height: 18px;
+	width: 23px;
+	background: transparent;
+	color: white;
+	font-size: 12px;
+	top: 255px;
+	left: 722px;
+	border: 0px;
+	padding-left: 20px;
+}
+
+
+#join .refresh {
+	top: 541px;
+	left: 45px;
+}
+
+#join .liste {
+	position: absolute;
+	height: 247px;
+	width: 624px;
+	top: 282px;
+	left: 42px;
+}
+
+#join .liste .partie {
+	position: relative;
+	width: 624px;
+	height: 20px;
+	background: #3a332d;
+	opacity: 0.5;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+#join .liste .partie:hover {
+	background: black;
+}
+
+#join .liste .partie div,
+#join .liste .partie input {
+	position: absolute;
+	top: 5px;
+	color: white;
+	font-size: 14px;
+}
+
+#join .liste .partie .num {
+	left: 60px;
+}
+#join .liste .partie .nbrJoueurs {
+	left: 270px;
+}
+#join .liste .partie .votrePartie {
+	left: 300px;
+}
+
+#join .liste .partie .input {
+	left: 530px;
+	background-color: orange;
+	height: 12px;
+	width: 40px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+
+#join .liste .partie .isIn {
+	left: 530px;
+	background-color: red;
+	height: 12px;
+	width: 40px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+#connect {
+	width: 1000px;
+	height: 600px;
+	background-image: url('connexion.jpg');
+	position: absolute;
+}
+
+#connect #pseudo {
+	position: absolute;
+	height: 35px;
+	width: 228px;
+	background: transparent;
+	color: white;
+	font-size: 14px;
+	top: 282px;
+	left: 562px;
+	border: 0px;
+	padding-left: 20px;
+}
+
+#connect .entrer {
+	position: absolute;
+	height: 35px;
+	width: 228px;
+	background: transparent;
+	top: 368px;
+	left: 456px;
+	border: 0px;
+	cursor: pointer;
+}
