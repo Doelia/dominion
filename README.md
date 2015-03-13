@@ -6,5 +6,6 @@ Clone libre en ligne du jeu de carte Dominion
 * Communication via protocole HTTP revisité (échange client/serveur 100% synchrone)
 * Moteur de jeu entièrement en objet pour une implémentation aisée de nouvelles fonctionnalités
 * La plupart des cartes de la version de base du jeu implémenté
+* Système multi parties à 4 joueurs simultannés, avec lobby
 
 Aucune ambition de mise en ligne particulière.
