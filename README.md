@@ -2,16 +2,18 @@
 
 Clone libre en ligne du jeu de carte Dominion
 
-Réalisé en 2012 en collaboration avec Manuel Chataigner (2éme année DUT informitaque) 
+Réalisé en 2012 (2éme année DUT Informatique) en collaboration avec Manuel Chataigner.
 
-Rapport de projet universitaire : [https://github.com/Doelia/dominion/raw/master/rapport/Rapport%20Dominia%20FINAL.pdf]()
+Rapport de projet universitaire : [https://github.com/Doelia/dominion/raw/t stmaster/rapport.pdf](https://github.com/Doelia/dominion/raw/master/rapport.pdf)
+
+Démo jouable : http://dominion.doelia.fr/
 
 ## Composants
-* Serveur en JAVA
-* Communication en HTTP (échange client/serveur synchrone)
-* Client en HTML / Javascript
-* La plupart des cartes de la version de base du jeu implémenté
-* Système multi parties à 4 joueurs simultannés, avec lobby
+* Serveur JAVA
+* Client HTML / Javascript
+* Communication en HTTP version synchrone
+* La plupart des cartes de la version de base du jeu implémentées
+* Lobby et parties simultannées de 1 à 4 joueurs
 
 ## Usage
 
