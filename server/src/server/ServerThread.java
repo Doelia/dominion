@@ -17,8 +17,8 @@ public class ServerThread extends Thread
 	public ServerThread(String host, int port) throws UnknownHostException, IOException
 	{
 		_clients = new ArrayList<Controleur>();
-		_serverSocket = new ServerSocket (port, 10, InetAddress.getByName(host));
-		System.out.println("En attente de connexion sur "+InetAddress.getByName(host)+":"+port);
+		_serverSocket = new ServerSocket (port, 10);
+		System.out.println("En attente de connexion sur :"+port);
 		this.run();
 	}
 	
@@ -74,7 +74,7 @@ public class ServerThread extends Thread
 		 * [3] : R (recv) ou S (send)
 		 * [4] : Le packet si [3] vaut S
 		 */
-		
+
 		if (packet.split("/").length == 0)
 			return new Reponse("/ manquant");
 		

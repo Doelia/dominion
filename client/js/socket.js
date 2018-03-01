@@ -11,7 +11,7 @@ function connexion(pseudo)
 	xhr.onreadystatechange = function(){
 		if(xhr.readyState == 4 && xhr.status == 200){
 			echo("Key = "+xhr.responseText);
-			echo("Connexion réalisée avec succès !");
+			echo("Connexion rï¿½alisï¿½e avec succï¿½s !");
 			key = xhr.responseText;
 
 			$('#connect').hide();
@@ -21,7 +21,7 @@ function connexion(pseudo)
 		}
 	}
 
-	var query = "http://"+host+":"+port+"/_:NEW:"+pseudo;
+	var query = "/server/_:NEW:"+pseudo;
 	
 	xhr.open("GET",query,true);
 	xhr.send(null);
@@ -39,7 +39,7 @@ function waitMsg()
 		}
 	}
 
-	var query = "http://"+host+":"+port+"/_:"+key+":R";
+	var query = "/server/_:"+key+":R";
 	
 	xhr.open("GET",query,true);
 	xhr.send(null);
@@ -57,7 +57,7 @@ function send(msg)
 		}
 	}
 
-	var query = "http://"+host+":"+port+"/_:"+key+":S:"+msg;
+	var query = "/server/_:"+key+":S:"+msg;
 	xhr.open("GET",query,true);
 	xhr.send(null);
 }
@@ -69,17 +69,17 @@ function parsePacket(packet)
 
 	if (packet.substr(0,2) == 'E-')
 	{
-		echo("Reçu état");
+		echo("Reï¿½u ï¿½tat");
 		onEtat(packet.substr(2,packet.length-1));
 	}
 	else if (packet.substr(0,2) == 'Z-')
 	{
-		echo("Reçu liste");
+		echo("Reï¿½u liste");
 		onListe(packet.substr(2,packet.length-1));
 	}
 	else
 	{
-		echo ("Packet reçu : "+packet);
+		echo ("Packet reï¿½u : "+packet);
 		if (packet.substr(0,9) == 'ToInPlay-')
 		{
 			deplaceCardToInPlay(
